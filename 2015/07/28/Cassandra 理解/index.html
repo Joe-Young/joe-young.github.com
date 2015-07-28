@@ -5,15 +5,22 @@
   
   <title>joe-young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="努力做一只数据昏析狮">
-<meta property="og:type" content="website">
+  <meta name="description" content="Cassandra理解—存储
+存储方式
+Hbase与Cassandra存储方式的对比 Cassandra与Hbase的存储形式是不同的。Hbase是搭建在HDFS这种分布式文件系统上的，本身并不是太需要进行分布式的存储管理，因为其可视HDFS为本地文件系统，不考虑具体数据存放在哪些节点，其功能主要是在HDFS基础上进行优化（针对HDFS增加和修改等问题），存储方式相对简单。Cassandra不同，">
+<meta property="og:type" content="article">
 <meta property="og:title" content="joe-young">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2015/07/28/Cassandra 理解/index.html">
 <meta property="og:site_name" content="joe-young">
-<meta property="og:description" content="努力做一只数据昏析狮">
+<meta property="og:description" content="Cassandra理解—存储
+存储方式
+Hbase与Cassandra存储方式的对比 Cassandra与Hbase的存储形式是不同的。Hbase是搭建在HDFS这种分布式文件系统上的，本身并不是太需要进行分布式的存储管理，因为其可视HDFS为本地文件系统，不考虑具体数据存放在哪些节点，其功能主要是在HDFS基础上进行优化（针对HDFS增加和修改等问题），存储方式相对简单。Cassandra不同，">
+<meta property="og:updated_time" content="2015-07-19T09:14:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="joe-young">
-<meta name="twitter:description" content="努力做一只数据昏析狮">
+<meta name="twitter:description" content="Cassandra理解—存储
+存储方式
+Hbase与Cassandra存储方式的对比 Cassandra与Hbase的存储形式是不同的。Hbase是搭建在HDFS这种分布式文件系统上的，本身并不是太需要进行分布式的存储管理，因为其可视HDFS为本地文件系统，不考虑具体数据存放在哪些节点，其功能主要是在HDFS基础上进行优化（针对HDFS增加和修改等问题），存储方式相对简单。Cassandra不同，">
   
     <link rel="alternative" href="/atom.xml" title="joe-young" type="application/atom+xml">
   
@@ -194,196 +201,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-系统安装后的配置" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/28/系统安装后的配置/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.705Z" itemprop="datePublished">2015-07-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/28/系统安装后的配置/">系统安装后的相关配置</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="系统安装后的配置">系统安装后的配置</h1><h2 id="系统软件">系统软件</h2><ol>
-<li><p>设置更新源，更新：  </p>
-<figure class="highlight"><figcaption><span>apt-get update && sudo apt-get upgrade```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2.  &#23433;&#35013;&#26174;&#21345;&#39537;&#21160;&#65288;&#21487;&#36873;&#65289;&#65307;&#10;&#10;3.  &#23433;&#35013;&#28779;&#29392;&#27983;&#35272;&#22120;&#21450;&#30456;&#20851;&#25554;&#20214;&#12290;&#10;&#10;4.  &#23433;&#35013;&#25628;&#29399;&#36755;&#20837;&#27861;&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=39&#10;5.  &#23433;&#35013;QQ&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=23&#10;6.  &#23433;&#35013;&#20026;&#30693;&#31508;&#35760;.</span><br></pre></td></tr></table></figure>
-<p>sudo add-apt-repository ppa:wiznote-team<br>sudo apt-get update<br>sudo apt-get install wiznote<br>```</p>
-</li>
-<li><p>安装shadowsocks；</p>
-</li>
-<li><p>安装字体。</p>
-</li>
-<li><p>安装sublime text。</p>
-</li>
-</ol>
-<p>10.<br>sudo apt-add-repository ppa:versable/elementary-update<br>sudo apt-get update<br>sudo apt-get install elementary-tweaks</p>
-<blockquote>
-<p>更多软件：<a href="http://www.ubuntukylin.com/applications/" target="_blank" rel="external">http://www.ubuntukylin.com/applications/</a></p>
-</blockquote>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Linux/">Linux</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Hadoop 相关配置" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/28/Hadoop 相关配置/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.698Z" itemprop="datePublished">2015-07-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Hadoop_相关配置">Hadoop 相关配置</h1><hr>
-<h2 id="完全分布式安装">完全分布式安装</h2><ol>
-<li>宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。</li>
-<li><p>宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。<br>  BTY:centos可安装直接rpm，然后更改配置文件（rpm不配置也可以用）<br> vim /etc/profile </p>
- <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#For java export </span></span><br><span class="line"><span class="constant">JAVA_HOME=</span>/usr/java/jdk</span><br><span class="line">export <span class="constant">CLASSPATH=</span>.<span class="symbol">:%JAVA_HOME%/lib/dt</span>.<span class="symbol">jar:</span>%<span class="constant">JAVA_HOME%</span>/lib/tools.jar</span><br><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
-<p> ubuntu用tar包，hadoop安装ubuntu可用deb包。<br> 建议都使用tar源码。     </p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/07/28/Hadoop 相关配置/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Hadoop HBase Spark 搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/28/Hadoop HBase Spark 搭建/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.679Z" itemprop="datePublished">2015-07-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/28/Hadoop HBase Spark 搭建/">安装配置 hadoop hbase scala spark</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Hadoop">Hadoop</h3><ol>
-<li><p>apt-get install openssh-server  </p>
-</li>
-<li><p>安装JDK<br>vim /etc/profile </p>
- <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># For java</span></span><br><span class="line">export <span class="constant">JAVA_HOME=</span>/usr/java/jdk</span><br><span class="line">export <span class="constant">CLASSPATH=</span>.<span class="symbol">:%JAVA_HOME%/lib/dt</span>.<span class="symbol">jar:</span>%<span class="constant">JAVA_HOME%</span>/lib/tools.jar</span><br><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
-<p> source /etc/profile     </p>
-</li>
-<li><p>配置/etc/hosts。<br>配置ssh：启动服务/etc/init.d/ssh start   （service sshd start，测试ssh localhost，本地测试）。<br>ufw disable( status)    关闭防火墙。<br>reboot</p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hbase/">hbase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scala/">scala</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spark/">spark</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/07/28/Hadoop HBase Spark 搭建/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Cassandra 理解" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Cassandra 理解" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/07/28/Cassandra 理解/" class="article-date">
@@ -409,27 +227,66 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/07/28/Hadoop HBase Spark 搭建/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          安装配置 hadoop hbase scala spark
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
 
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Cassandra 理解" data-title="" data-url="http://yoursite.com/2015/07/28/Cassandra 理解/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -453,8 +310,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
