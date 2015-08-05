@@ -114,7 +114,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/hadoop/" style="font-size: 10px;">hadoop</a> <a href="/tags/hbase/" style="font-size: 10px;">hbase</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/spark/" style="font-size: 10px;">spark</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
+						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/cassandra/" style="font-size: 10px;">cassandra</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hadoop/" style="font-size: 20px;">hadoop</a> <a href="/tags/hbase/" style="font-size: 10px;">hbase</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/spark/" style="font-size: 10px;">spark</a> <a href="/tags/分布式存储/" style="font-size: 10px;">分布式存储</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
 					</div>
 				</section>
 				
@@ -196,11 +196,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-系统安装后的配置" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-github与hexo的使用和常用命令" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/28/系统安装后的配置/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.705Z" itemprop="datePublished">2015-07-28</time>
+      <a href="/2015/08/05/github与hexo的使用和常用命令/" class="article-date">
+  	<time datetime="2015-08-05T12:16:18.845Z" itemprop="datePublished">2015-08-05</time>
 </a>
     </div>
   
@@ -213,7 +213,176 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/28/系统安装后的配置/">系统安装后的相关配置</a>
+      <a class="article-title" href="/2015/08/05/github与hexo的使用和常用命令/">Github与hexo理解和常用命令</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Github">Github</h2><h3 id="1-_Github提交过程的步骤：">1. Github提交过程的步骤：</h3><p>staged files are ready to commit (unstage)<br>pull your changes<br>(branch and merge)make own commits</p>
+<p>push them</p>
+<h3 id="2-_Github常用命令">2. Github常用命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th style="text-align:right">实现的功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git init</td>
+<td style="text-align:right">初始化*    initialize a git repository in a dir</td>
+</tr>
+<tr>
+<td>git status</td>
+<td style="text-align:right">查看状态</td>
+</tr>
+<tr>
+<td>git add octocat.txt</td>
+<td style="text-align:right">add it(changed files) to the staging area( not in our repository)</td>
+</tr>
+<tr>
+<td>git commit -m “Add cute octocat story”</td>
+<td style="text-align:right">Store the staged changes</td>
+</tr>
+<tr>
+<td>git add ‘*.txt’</td>
+<td style="text-align:right">added all the text files to staging area</td>
+</tr>
+<tr>
+<td>————</td>
+<td style="text-align:right">——-:</td>
+<td style="text-align:center">:——:</td>
+</tr>
+<tr>
+<td>git commit -m ‘Add all the octocat txt files’</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git status</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git log</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git remote add <em>origin</em> <a href="https://github.com/try-git/try_git.try_git" target="_blank" rel="external">https://github.com/try-git/try_git.try_git</a></td>
+<td style="text-align:right">push our local repo to the GitHub server  takes <em>a remote name</em> and <em>a repository URL</em></td>
+</tr>
+<tr>
+<td>git push -u origin master</td>
+<td style="text-align:right">The name of our remote is origin and the default local branch name is master.   push our local changes to our remote repo (on GitHub). -u tells Git to remember  so that next time we can simply run git push and Git will know what to do. </td>
+</tr>
+<tr>
+<td>git pull origin master</td>
+<td style="text-align:right">pull down any new changes</td>
+</tr>
+<tr>
+<td>git diff HEAD</td>
+<td style="text-align:right">the diff of our most recent commit, which we can refer to using the HEAD pointer.</td>
+</tr>
+<tr>
+<td>git diff —staged   </td>
+</tr>
+<tr>
+<td>git diff with the —staged</td>
+</tr>
+<tr>
+<td>git branch clean_up</td>
+<td style="text-align:right">create a copy</td>
+</tr>
+<tr>
+<td>git checkout clean_up</td>
+<td style="text-align:right">switch branches</td>
+</tr>
+<tr>
+<td>git branch clean_up</td>
+<td style="text-align:right">create a branch called clean_up,</td>
+</tr>
+<tr>
+<td>git checkout — octocat.txt</td>
+<td style="text-align:right">changed back</td>
+</tr>
+<tr>
+<td>git rm ‘*.txt’</td>
+</tr>
+<tr>
+<td>git commit -m “Remove all the cats”</td>
+</tr>
+<tr>
+<td>git checkout master</td>
+</tr>
+<tr>
+<td>git merge clean_up</td>
+<td style="text-align:right">MERGE</td>
+</tr>
+<tr>
+<td>git branch -d clean_up</td>
+<td style="text-align:right">delete a branch</td>
+</tr>
+<tr>
+<td>git push</td>
+<td style="text-align:right">push everything to remote repository</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>实战学习网站 <a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">https://try.github.io/levels/1/challenges/1</a></p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/github-hexo/">github,hexo</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-系统安装后的配置" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/05/系统安装后的配置/" class="article-date">
+  	<time datetime="2015-08-05T12:16:12.700Z" itemprop="datePublished">2015-08-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/05/系统安装后的配置/">系统安装后的相关配置</a>
     </h1>
   
 
@@ -224,17 +393,12 @@
       
         <h1 id="系统安装后的配置">系统安装后的配置</h1><h2 id="系统软件">系统软件</h2><ol>
 <li><p>设置更新源，更新：  </p>
-<figure class="highlight"><figcaption><span>apt-get update && sudo apt-get upgrade```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2.  &#23433;&#35013;&#26174;&#21345;&#39537;&#21160;&#65288;&#21487;&#36873;&#65289;&#65307;&#10;&#10;3.  &#23433;&#35013;&#28779;&#29392;&#27983;&#35272;&#22120;&#21450;&#30456;&#20851;&#25554;&#20214;&#12290;&#10;&#10;4.  &#23433;&#35013;&#25628;&#29399;&#36755;&#20837;&#27861;&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=39&#10;5.  &#23433;&#35013;QQ&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=23&#10;6.  &#23433;&#35013;&#20026;&#30693;&#31508;&#35760;.</span><br></pre></td></tr></table></figure>
-<p>sudo add-apt-repository ppa:wiznote-team<br>sudo apt-get update<br>sudo apt-get install wiznote<br>```</p>
-</li>
-<li><p>安装shadowsocks；</p>
-</li>
-<li><p>安装字体。</p>
-</li>
-<li><p>安装sublime text。</p>
+<figure class="highlight"><figcaption><span>apt-get update && sudo apt-get upgrade```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;2.  &#23433;&#35013;&#26174;&#21345;&#39537;&#21160;&#65288;&#21487;&#36873;&#65289;&#65307;&#10;&#10;3.  &#23433;&#35013;&#28779;&#29392;&#27983;&#35272;&#22120;&#21450;&#30456;&#20851;&#25554;&#20214;&#12290;&#10;&#10;4.  &#23433;&#35013;&#25628;&#29399;&#36755;&#20837;&#27861;&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=39&#10;5.  &#23433;&#35013;QQ&#65307;&#10;&#12288;&#19979;&#36733;&#22320;&#22336;&#65306;&#10;&#12288;http://www.ubuntukylin.com/applications/showimg.php?lang=cn&#38;id=23&#10;&#10; &#60;!--more--&#62; &#10; &#10;6.  &#23433;&#35013;&#20026;&#30693;&#31508;&#35760;.</span><br></pre></td></tr></table></figure>
+<p>sudo add-apt-repository ppa:wiznote-team<br>sudo apt-get update<br>sudo apt-get install wiznote</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="bullet">7.  </span>安装shadowsocks；</span><br><span class="line"></span><br><span class="line"><span class="bullet">8.  </span>安装字体。</span><br><span class="line"></span><br><span class="line"><span class="bullet">9. </span>安装sublime text。</span><br><span class="line"></span><br><span class="line"><span class="bullet">10. </span>安装elementary-tweaks，相当于Ubuntu tweaks。</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>10.<br>sudo apt-add-repository ppa:versable/elementary-update<br>sudo apt-get update<br>sudo apt-get install elementary-tweaks</p>
+<p>sudo apt-add-repository ppa:versable/elementary-update<br>sudo apt-get update<br>sudo apt-get install elementary-tweaks<br>```</p>
 <blockquote>
 <p>更多软件：<a href="http://www.ubuntukylin.com/applications/" target="_blank" rel="external">http://www.ubuntukylin.com/applications/</a></p>
 </blockquote>
@@ -270,11 +434,11 @@
 
 
   
-    <article id="post-Hadoop 相关配置" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Cassandra 理解" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/28/Hadoop 相关配置/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.698Z" itemprop="datePublished">2015-07-28</time>
+      <a href="/2015/08/05/Cassandra 理解/" class="article-date">
+  	<time datetime="2015-08-05T12:12:51.399Z" itemprop="datePublished">2015-08-05</time>
 </a>
     </div>
   
@@ -283,25 +447,37 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/05/Cassandra 理解/">Cassandra理解--存储</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hadoop_相关配置">Hadoop 相关配置</h1><hr>
-<h2 id="完全分布式安装">完全分布式安装</h2><ol>
-<li>宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。</li>
-<li><p>宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。<br>  BTY:centos可安装直接rpm，然后更改配置文件（rpm不配置也可以用）<br> vim /etc/profile </p>
- <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#For java export </span></span><br><span class="line"><span class="constant">JAVA_HOME=</span>/usr/java/jdk</span><br><span class="line">export <span class="constant">CLASSPATH=</span>.<span class="symbol">:%JAVA_HOME%/lib/dt</span>.<span class="symbol">jar:</span>%<span class="constant">JAVA_HOME%</span>/lib/tools.jar</span><br><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
-<p> ubuntu用tar包，hadoop安装ubuntu可用deb包。<br> 建议都使用tar源码。     </p>
+        <h2 id="存储方式">存储方式</h2><hr>
+<h2 id="Hbase与Cassandra存储方式的对比">Hbase与Cassandra存储方式的对比</h2><p> Cassandra与Hbase的存储形式是不同的。Hbase是搭建在HDFS这种分布式文件系统上的，本身并不是太需要进行分布式的存储管理，因为其可视HDFS为本地文件系统，不考虑具体数据存放在哪些节点，其功能主要是在HDFS基础上进行优化（针对HDFS增加和修改等问题），存储方式相对简单。Cassandra不同，Cassandra不需要建立在HDFS这种分布式文件系统上，故其需要考虑具体数据分布的问题，自行设计存储的模型。       </p>
+<h3 id="Cassandra的存储的模式是什么样的呢？">Cassandra的存储的模式是什么样的呢？</h3><p>环状。Cassandra的每一个DataCenter是一个环形（以下不做特殊说明均指统一DC），不同于HBase的星形（中心型）—HDFS就是中心型。数据中心的所有节点共同在这个环上，每个节点首尾相连，组成一个环。由此看Cassandra是去中心化的，不存在master（存在seeds，稍后介绍），所以集群的启动方式是加入式，即节点是启动后加入到环中的（不同于HBase集中式一起启动）。可是每个节点在这个环的什么位置呢？这个由cassandra配置文件的token决定。如果不使用vnode，这个token值需要自己设置。token的取值在-2^63~2^63之间。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">num_t</span>okens</span><br><span class="line"><span class="keyword">initial_t</span>oken</span><br></pre></td></tr></table></figure></p>
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cassandra/">cassandra</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式存储/">分布式存储</a></li></ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a  href="/2015/07/28/Hadoop 相关配置/#more">more >></a>
+          <a  href="/2015/08/05/Cassandra 理解/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -318,11 +494,11 @@
 
 
   
-    <article id="post-Hadoop HBase Spark 搭建" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Hadoop 相关配置" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/28/Hadoop HBase Spark 搭建/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.679Z" itemprop="datePublished">2015-07-28</time>
+      <a href="/2015/08/05/Hadoop 相关配置/" class="article-date">
+  	<time datetime="2015-08-05T12:07:56.301Z" itemprop="datePublished">2015-08-05</time>
 </a>
     </div>
   
@@ -335,7 +511,73 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/28/Hadoop HBase Spark 搭建/">安装配置 hadoop hbase scala spark</a>
+      <a class="article-title" href="/2015/08/05/Hadoop 相关配置/">Hadoop 相关配置</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="完全分布式安装">完全分布式安装</h2><ol>
+<li>宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。</li>
+<li><p>宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。<br>  BTY:centos可安装直接rpm，然后更改配置文件（rpm不配置也可以用）<br> vim /etc/profile </p>
+ <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#For java export </span></span><br><span class="line"><span class="constant">JAVA_HOME=</span>/usr/java/jdk</span><br><span class="line">export <span class="constant">CLASSPATH=</span>.<span class="symbol">:%JAVA_HOME%/lib/dt</span>.<span class="symbol">jar:</span>%<span class="constant">JAVA_HOME%</span>/lib/tools.jar</span><br><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+<p> ubuntu用tar包，hadoop安装ubuntu可用deb包。<br> 建议都使用tar源码。     </p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/配置文件/">配置文件</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/08/05/Hadoop 相关配置/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-安装配置 hadoop hbase scala spark" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/05/安装配置 hadoop hbase scala spark/" class="article-date">
+  	<time datetime="2015-08-05T12:06:28.912Z" itemprop="datePublished">2015-08-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/05/安装配置 hadoop hbase scala spark/">安装配置 hadoop hbase scala spark</a>
     </h1>
   
 
@@ -366,54 +608,8 @@
 
       
         <p class="article-more-link">
-          <a  href="/2015/07/28/Hadoop HBase Spark 搭建/#more">more >></a>
+          <a  href="/2015/08/05/安装配置 hadoop hbase scala spark/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Cassandra 理解" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/07/28/Cassandra 理解/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.645Z" itemprop="datePublished">2015-07-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Cassandra理解—存储">Cassandra理解—存储</h1><hr>
-<h2 id="存储方式">存储方式</h2><hr>
-<h2 id="Hbase与Cassandra存储方式的对比">Hbase与Cassandra存储方式的对比</h2><p> Cassandra与Hbase的存储形式是不同的。Hbase是搭建在HDFS这种分布式文件系统上的，本身并不是太需要进行分布式的存储管理，因为其可视HDFS为本地文件系统，不考虑具体数据存放在哪些节点，其功能主要是在HDFS基础上进行优化（针对HDFS增加和修改等问题），存储方式相对简单。Cassandra不同，Cassandra不需要建立在HDFS这种分布式文件系统上，故其需要考虑具体数据分布的问题，自行设计存储的模型。       </p>
-<h3 id="Cassandra的存储的模式是什么样的呢？">Cassandra的存储的模式是什么样的呢？</h3><p>环状。Cassandra的每一个DataCenter是一个环形（以下不做特殊说明均指统一DC），不同于HBase的星形（中心型）—HDFS就是中心型。数据中心的所有节点共同在这个环上，每个节点首尾相连，组成一个环。由此看Cassandra是去中心化的，不存在master（存在seeds，稍后介绍），所以集群的启动方式是加入式，即节点是启动后加入到环中的（不同于HBase集中式一起启动）。可是每个节点在这个环的什么位置呢？这个由cassandra配置文件的token决定。如果不使用vnode，这个token值需要自己设置。token的取值在-2^63~2^63之间。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">num_t</span>okens</span><br><span class="line"><span class="keyword">initial_t</span>oken</span><br></pre></td></tr></table></figure></p>
-<p>当只有一个机器时，显然环上只有一个点，环上的所有数据都存在这台机器。当有两台机器时候，两台机器平分这个环是最好的负载状态，这时候环中的两个节点在环的直径的两端，数据存放在各自节点的相应位置。最后由于组成环状，-2^63和2^63位于同一位置，组成了同一节点。<br>以Murmur3Partitioner分区模式为例（在程序内部和集群配置文件partitioner中设置，具体不同分区的区别之后会有介绍）。在Murmur3Partitioner分区模式下，计算token的公式为：<br>python -c ‘print [str(((2<strong>64 / number_of_tokens) * i) - 2</strong>63) for i in range(number_of_tokens)]’</p>
-<p>当number of tokens 为 2 的时候两个节点的token值分别为 -2^63 和 0。即在-2^63到0 的这部分数据存在一个节点，0 到 2^63 这部分数据存在另一个机器。<br> 同样当有8台机器时候，每台机器的token值应该相应的设置为以下数值[‘-9223372036854775808’, ‘-6917529027641081856’, ‘-4611686018427387904’, ‘-2305843009213693952’, ‘0’, ‘2305843009213693952’, ‘4611686018427387904’, ‘6917529027641081856’]。容易发现任意相邻两个机器的差值都相同，即8个节点均匀的分散到了环上。<br>    问题来了，节点的分布知道了，可是数据是怎么确定要放到环上的那一部分呢？</p>
-<h3 id="数据分布位置确定">数据分布位置确定</h3><p>哈希函数。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
       
       <div class="clearfix"></div>
     </div>

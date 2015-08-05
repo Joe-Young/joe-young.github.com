@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | joe-young</title>
+  <title>Github与hexo理解和常用命令 | joe-young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="努力做一只数据昏析狮">
-<meta property="og:type" content="website">
-<meta property="og:title" content="joe-young">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Hadoop 相关配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github与hexo理解和常用命令">
+<meta property="og:url" content="http://yoursite.com/2015/08/05/github与hexo的使用和常用命令/index.html">
 <meta property="og:site_name" content="joe-young">
-<meta property="og:description" content="努力做一只数据昏析狮">
+<meta property="og:description" content="Hadoop 相关配置">
+<meta property="og:updated_time" content="2015-08-05T12:16:18.845Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="joe-young">
-<meta name="twitter:description" content="努力做一只数据昏析狮">
+<meta name="twitter:title" content="Github与hexo理解和常用命令">
+<meta name="twitter:description" content="Hadoop 相关配置">
   
     <link rel="alternative" href="/atom.xml" title="joe-young" type="application/atom+xml">
   
@@ -194,189 +195,217 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-github与hexo的使用和常用命令" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/05/github与hexo的使用和常用命令/" class="archive-article-date">
-  	<time datetime="2015-08-05T12:16:18.845Z" itemprop="datePublished">8月 5</time>
+    <div class="article-meta">
+      <a href="/2015/08/05/github与hexo的使用和常用命令/" class="article-date">
+  	<time datetime="2015-08-05T12:16:18.845Z" itemprop="datePublished">2015-08-05</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/05/github与hexo的使用和常用命令/">Github与hexo理解和常用命令</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Github与hexo理解和常用命令
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 	</div>
 
-          
+        
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/github-hexo/">github,hexo</a>
 	</div>
 
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Github">Github</h2><h3 id="1-_Github提交过程的步骤：">1. Github提交过程的步骤：</h3><p>staged files are ready to commit (unstage)<br>pull your changes<br>(branch and merge)make own commits</p>
+<p>push them</p>
+<h3 id="2-_Github常用命令">2. Github常用命令</h3><table>
+<thead>
+<tr>
+<th>命令</th>
+<th style="text-align:right">实现的功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git init</td>
+<td style="text-align:right">初始化*    initialize a git repository in a dir</td>
+</tr>
+<tr>
+<td>git status</td>
+<td style="text-align:right">查看状态</td>
+</tr>
+<tr>
+<td>git add octocat.txt</td>
+<td style="text-align:right">add it(changed files) to the staging area( not in our repository)</td>
+</tr>
+<tr>
+<td>git commit -m “Add cute octocat story”</td>
+<td style="text-align:right">Store the staged changes</td>
+</tr>
+<tr>
+<td>git add ‘*.txt’</td>
+<td style="text-align:right">added all the text files to staging area</td>
+</tr>
+<tr>
+<td>————</td>
+<td style="text-align:right">——-:</td>
+<td style="text-align:center">:——:</td>
+</tr>
+<tr>
+<td>git commit -m ‘Add all the octocat txt files’</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git status</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git log</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>git remote add <em>origin</em> <a href="https://github.com/try-git/try_git.try_git" target="_blank" rel="external">https://github.com/try-git/try_git.try_git</a></td>
+<td style="text-align:right">push our local repo to the GitHub server  takes <em>a remote name</em> and <em>a repository URL</em></td>
+</tr>
+<tr>
+<td>git push -u origin master</td>
+<td style="text-align:right">The name of our remote is origin and the default local branch name is master.   push our local changes to our remote repo (on GitHub). -u tells Git to remember  so that next time we can simply run git push and Git will know what to do. </td>
+</tr>
+<tr>
+<td>git pull origin master</td>
+<td style="text-align:right">pull down any new changes</td>
+</tr>
+<tr>
+<td>git diff HEAD</td>
+<td style="text-align:right">the diff of our most recent commit, which we can refer to using the HEAD pointer.</td>
+</tr>
+<tr>
+<td>git diff —staged   </td>
+</tr>
+<tr>
+<td>git diff with the —staged</td>
+</tr>
+<tr>
+<td>git branch clean_up</td>
+<td style="text-align:right">create a copy</td>
+</tr>
+<tr>
+<td>git checkout clean_up</td>
+<td style="text-align:right">switch branches</td>
+</tr>
+<tr>
+<td>git branch clean_up</td>
+<td style="text-align:right">create a branch called clean_up,</td>
+</tr>
+<tr>
+<td>git checkout — octocat.txt</td>
+<td style="text-align:right">changed back</td>
+</tr>
+<tr>
+<td>git rm ‘*.txt’</td>
+</tr>
+<tr>
+<td>git commit -m “Remove all the cats”</td>
+</tr>
+<tr>
+<td>git checkout master</td>
+</tr>
+<tr>
+<td>git merge clean_up</td>
+<td style="text-align:right">MERGE</td>
+</tr>
+<tr>
+<td>git branch -d clean_up</td>
+<td style="text-align:right">delete a branch</td>
+</tr>
+<tr>
+<td>git push</td>
+<td style="text-align:right">push everything to remote repository</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>实战学习网站 <a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">https://try.github.io/levels/1/challenges/1</a></p>
+</blockquote>
+
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/05/系统安装后的配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">系统安装后的相关配置</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/05/系统安装后的配置/" class="archive-article-date">
-  	<time datetime="2015-08-05T12:16:12.700Z" itemprop="datePublished">8月 5</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/05/系统安装后的配置/">系统安装后的相关配置</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li></ul>
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Linux/">Linux</a>
-	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/05/Cassandra 理解/" class="archive-article-date">
-  	<time datetime="2015-08-05T12:12:51.399Z" itemprop="datePublished">8月 5</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/05/Cassandra 理解/">Cassandra理解--存储</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cassandra/">cassandra</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式存储/">分布式存储</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/05/Hadoop 相关配置/" class="archive-article-date">
-  	<time datetime="2015-08-05T12:07:56.301Z" itemprop="datePublished">8月 5</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/05/Hadoop 相关配置/">Hadoop 相关配置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/配置文件/">配置文件</a>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="github与hexo的使用和常用命令" data-title="Github与hexo理解和常用命令" data-url="http://yoursite.com/2015/08/05/github与hexo的使用和常用命令/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/08/05/安装配置 hadoop hbase scala spark/" class="archive-article-date">
-  	<time datetime="2015-08-05T12:06:28.912Z" itemprop="datePublished">8月 5</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/05/安装配置 hadoop hbase scala spark/">安装配置 hadoop hbase scala spark</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hbase/">hbase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scala/">scala</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spark/">spark</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 </div>
       <footer id="footer">
@@ -402,8 +431,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false

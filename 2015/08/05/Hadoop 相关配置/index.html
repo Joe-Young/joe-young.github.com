@@ -3,27 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>joe-young</title>
+  <title>Hadoop 相关配置 | joe-young</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hadoop 相关配置
-完全分布式安装
-宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。
-宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。  BTY:centos可安装直接rpm，然后更改配置文件（rpm不">
+  <meta name="description" content="Hadoop 相关配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="joe-young">
-<meta property="og:url" content="http://yoursite.com/2015/07/28/Hadoop 相关配置/index.html">
+<meta property="og:title" content="Hadoop 相关配置">
+<meta property="og:url" content="http://yoursite.com/2015/08/05/Hadoop 相关配置/index.html">
 <meta property="og:site_name" content="joe-young">
-<meta property="og:description" content="Hadoop 相关配置
-完全分布式安装
-宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。
-宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。  BTY:centos可安装直接rpm，然后更改配置文件（rpm不">
-<meta property="og:updated_time" content="2015-07-23T13:52:42.000Z">
+<meta property="og:description" content="Hadoop 相关配置">
+<meta property="og:updated_time" content="2015-08-05T12:07:56.301Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="joe-young">
-<meta name="twitter:description" content="Hadoop 相关配置
-完全分布式安装
-宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。
-宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。  BTY:centos可安装直接rpm，然后更改配置文件（rpm不">
+<meta name="twitter:title" content="Hadoop 相关配置">
+<meta name="twitter:description" content="Hadoop 相关配置">
   
     <link rel="alternative" href="/atom.xml" title="joe-young" type="application/atom+xml">
   
@@ -124,7 +115,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/hadoop/" style="font-size: 10px;">hadoop</a> <a href="/tags/hbase/" style="font-size: 10px;">hbase</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/spark/" style="font-size: 10px;">spark</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
+						<a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/cassandra/" style="font-size: 10px;">cassandra</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hadoop/" style="font-size: 20px;">hadoop</a> <a href="/tags/hbase/" style="font-size: 10px;">hbase</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/spark/" style="font-size: 10px;">spark</a> <a href="/tags/分布式存储/" style="font-size: 10px;">分布式存储</a> <a href="/tags/系统/" style="font-size: 10px;">系统</a>
 					</div>
 				</section>
 				
@@ -207,8 +198,8 @@
       <div class="body-wrap"><article id="post-Hadoop 相关配置" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/07/28/Hadoop 相关配置/" class="article-date">
-  	<time datetime="2015-07-28T07:16:46.698Z" itemprop="datePublished">2015-07-28</time>
+      <a href="/2015/08/05/Hadoop 相关配置/" class="article-date">
+  	<time datetime="2015-08-05T12:07:56.301Z" itemprop="datePublished">2015-08-05</time>
 </a>
     </div>
   
@@ -217,10 +208,35 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hadoop 相关配置
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/配置文件/">配置文件</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hadoop_相关配置">Hadoop 相关配置</h1><hr>
-<h2 id="完全分布式安装">完全分布式安装</h2><ol>
+        <h2 id="完全分布式安装">完全分布式安装</h2><ol>
 <li>宿主机作为master运行namenode和jobtracker，两个虚拟机作为slave运行datanode（tasktracker），虚拟机直接用hadoop需要使用的用户名作用户名。</li>
 <li><p>宿主机：centos6.5 虚拟机：ubuntu10.10（暂时配置一台另一台克隆）分别安装java。<br>  BTY:centos可安装直接rpm，然后更改配置文件（rpm不配置也可以用）<br> vim /etc/profile </p>
  <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#For java export </span></span><br><span class="line"><span class="constant">JAVA_HOME=</span>/usr/java/jdk</span><br><span class="line">export <span class="constant">CLASSPATH=</span>.<span class="symbol">:%JAVA_HOME%/lib/dt</span>.<span class="symbol">jar:</span>%<span class="constant">JAVA_HOME%</span>/lib/tools.jar</span><br><span class="line">export <span class="constant">PATH=</span><span class="variable">$PATH</span><span class="symbol">:</span><span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
@@ -292,17 +308,17 @@ bin/<span class="built_in">start</span>-all.sh
     
 <nav id="article-nav">
   
-    <a href="/2015/07/28/系统安装后的配置/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/08/05/Cassandra 理解/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          系统安装后的相关配置
+          Cassandra理解--存储
         
       </div>
     </a>
   
   
-    <a href="/2015/07/28/Hadoop HBase Spark 搭建/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/08/05/安装配置 hadoop hbase scala spark/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">安装配置 hadoop hbase scala spark</div>
       <strong class="article-nav-caption">></strong>
     </a>
@@ -332,7 +348,7 @@ bin/<span class="built_in">start</span>-all.sh
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="Hadoop 相关配置" data-title="" data-url="http://yoursite.com/2015/07/28/Hadoop 相关配置/"></div>
+	<div class="ds-thread" data-thread-key="Hadoop 相关配置" data-title="Hadoop 相关配置" data-url="http://yoursite.com/2015/08/05/Hadoop 相关配置/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
