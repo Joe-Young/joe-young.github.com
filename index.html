@@ -186,83 +186,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-系统安装后的配置" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/08/08/系统安装后的配置/" class="article-date">
-  	<time datetime="2015-08-08T07:30:58.334Z" itemprop="datePublished">2015-08-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/08/系统安装后的配置/">EOS(linux)系统安装后的相关配置</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="系统安装后的配置">系统安装后的配置</h1><h2 id="系统软件">系统软件</h2><ol>
-<li><p>设置更新源，更新：  </p>
-<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span> &amp;&amp; sudo apt-<span class="built_in">get</span> upgrade</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装显卡驱动（可选）；</p>
-</li>
-<li><p>安装火狐浏览器及相关插件。</p>
-</li>
-<li><p>安装搜狗输入法；<br>　下载地址：<br>　<a href="http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=39">http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=39</a></p>
-</li>
-<li><p>安装QQ；<br>　下载地址：<br>　<a href="http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=23">http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=23</a></p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Linux/">Linux</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/08/08/系统安装后的配置/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
     <article id="post-github与hexo的使用和常用命令" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/08/05/github与hexo的使用和常用命令/" class="article-date">
-  	<time datetime="2015-08-05T12:16:18.845Z" itemprop="datePublished">2015-08-05</time>
+      <a href="/2015/08/08/github与hexo的使用和常用命令/" class="article-date">
+  	<time datetime="2015-08-08T08:43:38.334Z" itemprop="datePublished">2015-08-08</time>
 </a>
     </div>
   
@@ -275,7 +203,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/05/github与hexo的使用和常用命令/">Github与hexo理解和常用命令</a>
+      <a class="article-title" href="/2015/08/08/github与hexo的使用和常用命令/">Github与hexo理解和常用命令</a>
     </h1>
   
 
@@ -313,11 +241,6 @@
 <tr>
 <td>git add ‘*.txt’</td>
 <td style="text-align:right">added all the text files to staging area</td>
-</tr>
-<tr>
-<td>————</td>
-<td style="text-align:right">——-:</td>
-<td style="text-align:center">:——:</td>
 </tr>
 <tr>
 <td>git commit -m ‘Add all the octocat txt files’</td>
@@ -395,6 +318,15 @@
 <blockquote>
 <p>实战学习网站 <a href="https://try.github.io/levels/1/challenges/1" target="_blank" rel="external">https://try.github.io/levels/1/challenges/1</a></p>
 </blockquote>
+<hr>
+<h2 id="Hexo">Hexo</h2><h3 id="1-_常用命令">1. 常用命令</h3><h4 id="Installation"><strong>Installation</strong></h4><p><strong>安装前准备</strong></p>
+<p>安装Node.js<br>安装Git</p>
+<p>安装Hexo<br><figure class="highlight"><figcaption><span>install hexo-cli -g```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">####**Quick Start**&#10;**Setup your blog**</span><br></pre></td></tr></table></figure></p>
+<p>hexo init blog<br>cd blog<br>npm install<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">*</span><span class="keyword">*</span>Start the server<span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"></span><br><span class="line">```hexo server</span><br></pre></td></tr></table></figure></p>
+<p><strong>Create a new post</strong></p>
+<figure class="highlight"><figcaption><span>new "Hello"```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;**Generate static files**&#10;&#10;```hexo generate</span><br></pre></td></tr></table></figure>
+<p><strong>部署</strong></p>
+<p><code>hexo deloy</code></p>
 
       
     </div>
@@ -409,6 +341,93 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/github-hexo/">github,hexo</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-系统安装后的配置" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/08/系统安装后的配置/" class="article-date">
+  	<time datetime="2015-08-08T07:33:30.997Z" itemprop="datePublished">2015-08-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/08/系统安装后的配置/">EOS(linux)系统安装后的相关配置</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="系统安装后的配置">系统安装后的配置</h1><h2 id="系统软件">系统软件</h2><ol>
+<li><p>设置更新源，更新：  </p>
+<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span> &amp;&amp; sudo apt-<span class="built_in">get</span> upgrade</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装显卡驱动（可选）；</p>
+</li>
+<li><p>安装火狐浏览器及相关插件。</p>
+</li>
+<li><p>安装搜狗输入法；<br>　下载地址：<br>　<a href="http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=39" target="_blank" rel="external">http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=39</a></p>
+</li>
+<li><p>安装QQ；<br>　下载地址：<br>　<a href="http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=23" target="_blank" rel="external">http://www.ubuntukylin.com/applications/showimg.php?lang=cn&amp;id=23</a></p>
+<!--阅读全文--> 
+</li>
+<li><p>安装为知笔记.</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="instruction"> add-apt-repository </span>ppa:wiznote-team</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install wiznote</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装shadowsocks；</p>
+</li>
+<li><p>安装字体。</p>
+</li>
+<li><p>安装sublime text。</p>
+</li>
+<li><p>安装elementary-tweaks，相当于Ubuntu tweaks。</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">add</span>-repository <span class="keyword">pp</span><span class="variable">a:versable</span>/elementary-<span class="keyword">update</span></span><br><span class="line">sudo apt-<span class="built_in">get</span> <span class="keyword">update</span></span><br><span class="line">sudo apt-<span class="built_in">get</span> install elementary-tweaks</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>更多软件：<a href="http://www.ubuntukylin.com/applications/" target="_blank" rel="external">http://www.ubuntukylin.com/applications/</a></p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Linux/">Linux</a>
 	</div>
 
 
